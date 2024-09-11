@@ -77,7 +77,6 @@ function deleteTodo(index) {
     ctr -= 1;
 }
 
-
 {/* <div class="list-container incompleted-todos">
 
             <p class="list-title">TO DO</p>

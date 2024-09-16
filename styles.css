@@ -53,9 +53,11 @@ button:hover {
 
 .title {
     color: var(--TEXT-PRIMARY);
-    font-size: 1.25rem;
-    font-style: italic;
+    font-size: 1.75rem;
+    /* font-style: italic; */
     margin-bottom: 1rem;
+    width: 100%;
+    
 }
 
 .main-container {

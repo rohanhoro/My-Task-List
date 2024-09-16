@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- <link rel="shortcut icon" href="img/task-comrade-logo.png" type="image/x-icon"> -->
+        <title>My Task-List</title>
+    </head>
+
+    <body>
+
+        <div class="main-container" id="main">
+        
+            <div class="title">
+                <img src="img" height="" alt="My Task-List">
+                
+            </div>
+
+            
+            <div class="input-container">
+                <input type="text" class="input" placeholder="Add items">
+                <button onclick="addTodo()"><i class="fab fa-plus fa-lg"></i></button>
+            </div>
+
+            <div class="main-list-container">
+                <div class="empty-state">
+                    <p>Nothing to-do. Enjoy!</p>
+                </div>
+
+                <div class="list-container incompleted-todos">
+                    <p class="list-title">TO DO</p>
+                    <div class="list" id="incompleted-list"></div>
+                </div>
+
+                <div class="list-container completed-todos">
+                    <p class="list-title">COMPLETED</p>
+                    <div class="list" id="completed-list"></div>
+                </div>
+            </div>
+        </div> 
+        
+        <script src="script.js"></script>
+    </body>
+</html>
+

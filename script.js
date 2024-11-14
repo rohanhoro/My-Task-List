@@ -1,21 +1,32 @@
 
 let todos = [];
 
+const inputElement = document.querySelector(".input");
+
+//------event listener for enter key------
+inputElement.addEventListener("keydown", (event) => {
+  if (event.key === "Enter") {
+    addTodo();
+  }
+});
+
+//------this function pushes the todo object to the array------
 function addTodo() {
-    if (document.querySelector(".input").value === "") {
-        alert("Please enter your to-do")
-    } else {
-        todos.push({
-            title: document.querySelector(".input").value,
-            isDone: false,
-            isEditing: false
-        })
-    
-        document.querySelector(".input").value = "";
-        
-        render();
-    }
-    
+  const todoText = inputElement.value.trim();
+
+  if (todoText === "") {
+    alert("Please enter your to-do");
+  } else {
+    todos.push({
+      title: document.querySelector(".input").value,
+      isDone: false,
+      isEditing: false,
+    });
+
+    inputElement.value = "";
+
+    render();
+  }
 }
 
 function render() {
